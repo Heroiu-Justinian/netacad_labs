@@ -18,3 +18,9 @@ class Queue:
     def __str__(self):
         return ', '.join([str(elem) for elem in self.__queue])
 
+class SuperQueue(Queue):
+    def __init__(self):
+        super().__init__()
+        
+    def isempty(self):
+        return not self._queue
